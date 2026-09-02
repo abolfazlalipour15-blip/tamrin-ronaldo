@@ -68,13 +68,15 @@ h3 {
 }
 
 #kadr2 {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+
     /* height: 200px; */
     background-color: #9aa0ff66;
 }
 
 .matnkadr2 {
+    justify-content: space-between;
+    display: flex;
     position: relative;
     padding-right: 70px;
     padding-top: 20px;
@@ -86,43 +88,34 @@ h3 {
 
 }
 
-/* .iconkadr2 {
-    float: left;
-
-} */
-
 .iconkadr2>img {
     height: 150px;
     position: relative;
-    top: 15px;
 }
 
 #kadr3 {
     background-color: #d3b15a52;
-    /* height: 150px; */
-    display: flex;
-    justify-content: space-between;
 }
 
 .matnkadr3 {
+    display: flex;
+    justify-content: space-between;
     padding: 0 60px;
-    padding-top: 30px;
-    padding-bottom: 40px;
 }
 
 .iconkadr3>img {
-    height: 100px;
-    left: 50px;
-    top: 20px;
+    height: 100px;;
     position: relative;
 
 }
 
 #kadr3>ol {
     padding-right: 30px;
+    position: absolute;
 }
 
 #kadr3>h3 {
+    position: relative;
     color: #494102;
     padding-top: 10px;
     font-weight: 800;
@@ -193,6 +186,9 @@ a:hover {
 #kadr4,
 #kadr5 {
     margin-top: 30px;
+    box-sizing: border-box;
+    border:.5px solid rgb(221, 220, 220);
+    border-radius: 2px;
 }
 
 ::selection {
@@ -204,6 +200,8 @@ a:hover {
 
     article,
     section,
+    .matnkadr2,
+    .matnkadr3,
     .akskadr4 {
         display: flex;
         flex-direction: column;
